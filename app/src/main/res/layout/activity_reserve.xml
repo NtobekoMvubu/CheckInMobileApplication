@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainactivity"
+    tools:context=".reserve">
+
+    <ImageView
+        android:id="@+id/iv_hotelpic"
+        android:layout_width="456dp"
+        android:layout_height="273dp"
+        android:src="@drawable/bluewaters1"
+        app:layout_constraintBottom_toTopOf="@id/tv_hotelname"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="234dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_hotelpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_hotelpic"/>
+
+    <TextView
+        android:id="@+id/tv_hotelname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="BlueWaters"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_hotelpic" />
+
+    <ScrollView
+        android:id="@+id/sv_res"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_hotelpic"
+        app:layout_constraintVertical_bias="0.0">
+
+    <LinearLayout
+android:id="@+id/res"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+app:layout_constraintBottom_toBottomOf="parent"
+android:background="@drawable/signupblackground"
+android:padding="25dp"
+    >
+<TextView
+    android:id="@+id/tv_res"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Reservation"
+    android:textAlignment="center"
+    android:textColor="#000"
+    android:textSize="28dp"
+    android:layout_marginBottom="25dp"
+    />
+<TextView
+    android:id="@+id/tv_username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:hint="Name"
+    android:inputType="textPersonName"
+    android:layout_marginBottom="5dp"
+    />
+<TextView
+    android:id="@+id/tv_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Email"
+    android:textSize="15sp"
+    android:inputType="textEmailAddress"
+    android:layout_marginBottom="5dp"
+    />
+<TextView
+    android:id="@+id/et_checkindate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Check In Date"
+    android:textSize="18sp"
+    android:inputType="date"
+    android:layout_marginBottom="5dp"
+    />
+<TextView
+    android:id="@+id/et_checkoutdate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Check Out Date"
+    android:textSize="18sp"
+    android:inputType="date"
+    android:layout_marginBottom="5dp"
+    />
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Dates"
+            android:background="@drawable/buttonbg"
+            android:textSize="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+<TextView
+    android:id="@+id/tv_noofpeople"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Number of People"
+    android:textSize="15sp"
+    android:inputType="textPassword"
+    />
+
+<Spinner
+    android:id="@+id/sp_noOfPeople"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:textSize="18sp" />
+
+<TextView
+    android:id="@+id/tv_noofRooms"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Number of rooms: 5"
+    android:textSize="17sp"
+    />
+
+        <TextView
+            android:id="@+id/tv_ppn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Price Per Night"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total Cost"
+            android:textSize="18sp"
+            />
+
+        <Button
+    android:id="@+id/btn_makereservation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Make Reservation"
+    android:background="@drawable/buttonbg"
+    android:textSize="18sp"
+    android:layout_marginBottom="10dp"
+    />
+
+        <Button
+            android:id="@+id/btn_viewbookings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Bookings"
+            android:background="@drawable/buttonbg"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            />
+</LinearLayout>
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

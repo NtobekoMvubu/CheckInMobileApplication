@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BookedIt</string>
+    <string-array name="numbers">
+        <item>1 person</item>
+        <item>2 people</item>
+        <item>3 people</item>
+        <item>4 people</item>
+        <item>5 people</item>
+        <item>6 people</item>
+        <item>7 people</item>
+    </string-array>
+</resources>

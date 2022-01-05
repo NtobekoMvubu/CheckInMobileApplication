@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" tools:targetApi="lollipop">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColourPrimary1</item>
+        <item name="colorPrimaryDark">@color/ColourPrimaryDark1</item>
+        <item name="colorAccent">@color/ColourAccent1</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+</resources>

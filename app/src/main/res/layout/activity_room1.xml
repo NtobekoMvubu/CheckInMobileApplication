@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bg_mainactivity"
+      android:transitionName="background_image_transition"
+      tools:context=".Room3"
+      tools:targetApi="LOLLIPOP">
+
+
+
+    <TextView
+        android:id="@+id/tv_hotel1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/open_sans_extra_bold"
+        android:text="Coastlands Musgrave Hotel"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_description1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Located 2.3 km from Greyville Racecourse, Coastlands Musgrave Hotel offers an outdoor pool and spa facilities. It features modern rooms and a sun terrace. North Beach is 5.8 km away."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tv_hotel1_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_name"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Coastlands Musgrave Hotel has elegantly decorated rooms with a balcony overlooking the surrounding area. Each of the air-conditioned rooms has a flat-screen TV with satellite channels, a seating area, and a coffee maker."
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tv_hotel1_description1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_description1"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="468dp"
+        android:layout_height="272dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hotel1_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/musgrave" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="234dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_main" />
+
+    <ImageView
+        android:id="@+id/iv_bottomleft"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hotel1_name"
+        app:layout_constraintEnd_toStartOf="@id/iv_bottommid"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/musgrave1" />
+
+    <ImageView
+        android:id="@+id/iv_bottommid"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hotel1_name"
+        app:layout_constraintEnd_toStartOf="@id/iv_bottomright"
+        app:layout_constraintStart_toEndOf="@id/iv_bottomleft"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/musgrave2"/>
+
+    <ImageView
+        android:id="@+id/iv_bottomright"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hotel1_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toEndOf="@id/iv_bottommid"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main"
+        app:layout_constraintVertical_bias="0.963"
+        app:srcCompat="@drawable/musgrave4" />
+
+    <TextView
+        android:id="@+id/tv_hotel1_price"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_description2"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_price_value"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="R550 per night"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_hotel1_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_description2"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_room_no"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="Number of Rooms"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_price"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_room_no_value"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="4 Rooms"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_hotel1_room_no"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_price_value"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_features"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="Features"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_room_no"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_feature1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="Parking"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_hotel1_features"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_room_no_value"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_feature2"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="Resurant"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_hotel1_features"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_feature1"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_hotel1_feature3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="Spa and Wellness &amp; cnetre"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_hotel1_features"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotel1_feature2"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:id="@+id/btn_regnow"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbg"
+        android:text="Reserve Now"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_hotel1_feature3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_eMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_regnow"
+        app:layout_constraintBottom_toTopOf="@id/btn_sendemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        android:hint="If you have any enquires please enter them here "
+        />
+
+    <Button
+        android:id="@+id/btn_sendemail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbg"
+        android:text="Send Enquiry"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_eMessage"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

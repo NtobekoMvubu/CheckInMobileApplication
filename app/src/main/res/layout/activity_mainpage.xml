@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_mainactivity"
+    tools:context=".Mainpage">
+
+  <androidx.constraintlayout.widget.Guideline
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/guideline"
+      android:layout_marginStart="20dp"
+      android:layout_marginLeft="20dp"
+      android:orientation="vertical"
+      app:layout_constraintGuide_end="349dp"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/guideline2"
+      android:layout_marginStart="20dp"
+      android:layout_marginLeft="20dp"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="349dp"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/firsText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="44dp"
+      android:fontFamily="@font/open_sans_light"
+      android:text="Check"
+      android:textColor="@color/white"
+      android:textSize="54sp"
+      app:layout_constraintStart_toStartOf="@+id/guideline"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="In"
+        android:textColor="@color/white"
+        android:textSize="54sp"
+        app:layout_constraintStart_toStartOf="@+id/firsText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         android:layout_marginTop="45dp"
+         android:scrollbars="none"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toStartOf="@id/guideline2"
+         app:layout_constraintHorizontal_bias="0.506"
+         app:layout_constraintStart_toStartOf="@id/guideline"
+         app:layout_constraintTop_toBottomOf="@id/firsText"
+         app:layout_constraintVertical_bias="0.0">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_hotel1"
+               android:layout_width="match_parent"
+               android:layout_height="226dp">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <View
+                       android:id="@+id/v_hotel1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/musgrave3"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintVertical_bias="1.0" />
+
+                   <TextView
+                           android:id="@+id/tv_hotel1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="12dp"
+                           android:layout_marginLeft="12dp"
+                           android:layout_marginTop="116dp"
+                           android:fontFamily="@font/open_sans_extra_bold"
+                           android:text="Coastlands Musgraves Hotel"
+                           android:textColor="@color/white"
+                           android:textSize="22sp"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintHorizontal_bias="0.0"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent"
+
+                           />
+
+                   <RatingBar
+                       android:id="@+id/rb_hotel1"
+                       style="?android:attr/ratingBarStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="16dp"
+                       android:layout_marginTop="12dp"
+                       android:max="5"
+                       android:numStars="5"
+                       android:progressTint="@color/ColourAccent1"
+                       android:rating="4"
+                       android:stepSize="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel1" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rb_hotel1_value"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginStart="12dp"
+                       android:fontFamily="@font/open_sans_bold"
+                       android:text="3.9"
+                       android:textColor="@color/white"
+                       app:layout_constraintStart_toEndOf="@+id/rb_hotel1"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel1"/>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_hotel2"
+               android:layout_width="match_parent"
+               android:layout_height="226dp"
+               android:layout_marginTop="20dp">
+
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <View
+                       android:id="@+id/v_hotel2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/pearls"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintVertical_bias="1.0" />
+
+                   <TextView
+                       android:id="@+id/tv_hotel2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="12dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginTop="116dp"
+                       android:fontFamily="@font/open_sans_extra_bold"
+                       android:text="Pearls of Umhlanga"
+                       android:textColor="@color/white"
+                       android:textSize="22sp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+
+                       />
+
+                   <RatingBar
+                       android:id="@+id/rb_hotel2"
+                       style="?android:attr/ratingBarStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="16dp"
+                       android:layout_marginTop="12dp"
+                       android:max="5"
+                       android:numStars="5"
+                       android:progressTint="@color/ColourAccent1"
+                       android:rating="5"
+                       android:stepSize="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel2" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rb_hotel2_value"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginStart="12dp"
+                       android:fontFamily="@font/open_sans_bold"
+                       android:text="4.8"
+                       android:textSize="15sp"
+                       android:textColor="@color/white"
+                       app:layout_constraintStart_toEndOf="@+id/rb_hotel2"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel2"/>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_hotel3"
+               android:layout_width="match_parent"
+               android:layout_height="226dp"
+               android:layout_marginTop="20dp">
+
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <View
+                       android:id="@+id/v_hotel3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/express1"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintVertical_bias="1.0" />
+
+                   <TextView
+                       android:id="@+id/tv_hotel3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="12dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginTop="116dp"
+                       android:fontFamily="@font/open_sans_extra_bold"
+                       android:text="Holiday Inn Express"
+                       android:textColor="@color/white"
+                       android:textSize="22sp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+
+                       />
+
+                   <RatingBar
+                       android:id="@+id/rb_hotel3"
+                       style="?android:attr/ratingBarStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="16dp"
+                       android:layout_marginTop="12dp"
+                       android:max="5"
+                       android:numStars="5"
+                       android:progressTint="@color/ColourAccent1"
+                       android:rating="4"
+                       android:stepSize="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel3" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rb_hotel3_value"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginStart="12dp"
+                       android:fontFamily="@font/open_sans_bold"
+                       android:text="4"
+                       android:textSize="15sp"
+                       android:textColor="@color/white"
+                       app:layout_constraintStart_toEndOf="@+id/rb_hotel3"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel3"/>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_hotel4"
+               android:layout_width="match_parent"
+               android:layout_height="226dp"
+               android:layout_marginTop="20dp">
+
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <View
+                       android:id="@+id/v_hotel4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/onomo"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintVertical_bias="1.0" />
+
+                   <TextView
+                       android:id="@+id/tv_hotel4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="12dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginTop="116dp"
+                       android:fontFamily="@font/open_sans_extra_bold"
+                       android:text="Onomo Hotel"
+                       android:textColor="@color/white"
+                       android:textSize="22sp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+
+                       />
+
+                   <RatingBar
+                       android:id="@+id/rb_hotel4"
+                       style="?android:attr/ratingBarStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="16dp"
+                       android:layout_marginTop="12dp"
+                       android:max="5"
+                       android:numStars="5"
+                       android:progressTint="@color/ColourAccent1"
+                       android:rating="3"
+                       android:stepSize="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel4" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rb_hotel4_value"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginStart="12dp"
+                       android:fontFamily="@font/open_sans_bold"
+                       android:text="3"
+                       android:textSize="15sp"
+                       android:textColor="@color/white"
+                       app:layout_constraintStart_toEndOf="@+id/rb_hotel4"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel4"/>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_hotel5"
+               android:layout_width="match_parent"
+               android:layout_height="226dp"
+               android:layout_marginTop="20dp">
+
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <View
+                       android:id="@+id/v_hotel5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bluewaters1"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintVertical_bias="1.0" />
+
+                   <TextView
+                       android:id="@+id/tv_hotel5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="12dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginTop="116dp"
+                       android:fontFamily="@font/open_sans_extra_bold"
+                       android:text="Blue Waters Hotel"
+                       android:textColor="@color/white"
+                       android:textSize="22sp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+
+                       />
+
+                   <RatingBar
+                       android:id="@+id/rb_hotel5"
+                       style="?android:attr/ratingBarStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="16dp"
+                       android:layout_marginTop="12dp"
+                       android:max="5"
+                       android:numStars="5"
+                       android:progressTint="@color/ColourAccent1"
+                       android:rating="4.5"
+                       android:stepSize="0.5"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel5" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rb_hotel5_value"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="12dp"
+                       android:layout_marginStart="12dp"
+                       android:fontFamily="@font/open_sans_bold"
+                       android:text="4.5"
+                       android:textSize="15sp"
+                       android:textColor="@color/white"
+                       app:layout_constraintStart_toEndOf="@+id/rb_hotel5"
+                       app:layout_constraintTop_toBottomOf="@id/tv_hotel5"/>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+
+     </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_helloname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Hello user"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/secondText"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
